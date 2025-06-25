@@ -2,6 +2,7 @@
 Implementations in pytorch of different network architectures for image classification on the Cifar-100 dataset 
 
 ### Simple CNN
+Network that serves the foundation for future models I make
 
 ```mermaid
 graph TD
