@@ -4,23 +4,23 @@ Implementations in pytorch of different network architectures for image classifi
 ### Simple CNN
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph TD
+    A[Input 3x32x32] --> B[Conv3x3: 3→64]
+    B --> C[BatchNorm+ReLU]
+    C --> D[MaxPool 2x2]
+    D --> E[Conv3x3: 64→128]
+    E --> F[BatchNorm+ReLU]
+    F --> G[MaxPool 2x2]
+    G --> H[Conv3x3: 128→256]
+    H --> I[BatchNorm+ReLU]
+    I --> J[MaxPool 2x2]
+    J --> K[Flatten 256x4x4→4096]
+    K --> L[FC: 4096→512]
+    L --> M[Dropout 0.5]
+    M --> N[ReLU]
+    N --> O[FC: 512→100]
 ```
 
-Input Layer
-Convolutional layer
-Convolutional layer
-Convolutional layer 
-Flatten
-Fully Connected Layer 1
-Fully connected Layer 2
-
-Uses Batch normalisation + ReLU in hidden layers 
-Uses Maxpooling for downsising 
 
 Accuracy of the network on the 10000 test images after 20 epochs: 22.43 % 
 
