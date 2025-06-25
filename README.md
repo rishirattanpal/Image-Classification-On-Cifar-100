@@ -3,6 +3,14 @@ Implementations in pytorch of different network architectures for image classifi
 
 ### Simple CNN
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 Input Layer
 Convolutional layer
 Convolutional layer
@@ -14,4 +22,5 @@ Fully connected Layer 2
 Uses Batch normalisation + ReLU in hidden layers 
 Uses Maxpooling for downsising 
 
-Achieves 
+Accuracy of the network on the 10000 test images after 20 epochs: 22.43 % 
+
