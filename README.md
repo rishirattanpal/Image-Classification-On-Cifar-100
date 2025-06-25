@@ -39,7 +39,8 @@ Implementation of ResNet
 Key improvements:
 - implemented a Resdiual block that utilises skip connections and progressive downsampling 
 - Deeper network
-- Kaiming initalisation 
+- Kaiming initalisation
+- More epochs
 
 ```mermaid
 graph TD
